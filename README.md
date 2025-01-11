@@ -12,7 +12,6 @@ Este projeto demonstra a renderização de um cubo animado em um display OLED SS
 - [Configuração no Hardware](#configuração-no-hardware)
 - [Compilação e Execução](#compilação-e-execução)
 - [Funcionamento](#funcionamento)
-- [Imagens e Demonstração](#imagens-e-demonstração)
 
 ---
 
@@ -89,3 +88,10 @@ mkdir build
 cd build
 cmake ..
 make
+```
+## 🔄 Funcionamento
+Após a inicialização, o display será preenchido com a animação de um cubo 3D rotacionando.
+O desenho é renderizado no buffer local e enviado ao display via I2C.
+Descrição da Animação:
+O cubo é desenhado utilizando linhas conectando vértices 3D transformados para coordenadas 2D.
+A rotação é feita aplicando matrizes de transformação nos eixos X, Y e Z.
