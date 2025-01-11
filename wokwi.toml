@@ -1,0 +1,4 @@
+[wokwi]
+version = 1
+firmware = 'build/cube.uf2'
+elf = 'build/cube.elf'

@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "author": "yago",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-pi-pico",
+      "id": "pico",
+      "top": -104.7,
+      "left": -86.65,
+      "attrs": { "builder": "pico-sdk" }
+    },
+    {
+      "type": "board-ssd1306",
+      "id": "oled1",
+      "top": 118.34,
+      "left": -95.77,
+      "attrs": { "i2cAddress": "0x3c" }
+    }
+  ],
+  "connections": [
+    [ "pico:GP14", "oled1:SDA", "cyan", [ "h-15.35", "v24.75", "h67.2" ] ],
+    [ "pico:GP15", "oled1:SCL", "cyan", [ "h-24.95", "v15.15", "h67.2", "v-9.6" ] ],
+    [ "pico:GND.4", "oled1:GND", "black", [ "h-34.55", "v43.95", "h57.6" ] ],
+    [ "pico:3V3", "oled1:VCC", "red", [ "h14.65", "v168.75", "h-48" ] ]
+  ],
+  "dependencies": {}
+}
